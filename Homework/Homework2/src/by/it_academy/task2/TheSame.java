@@ -4,7 +4,7 @@ public class TheSame {
     public static void main (String[] arg) {
 
 
-        int[] justArray2 = new int[] {7, 26, 4, 3, 4, 17, 13, 7, 7, 4}; //косяк с минусом
+        int[] justArray2 = new int[] {7, 26, 4, 3, 4, 17, 13, 7, 7, 4}; //works only for positive values
 
         System.out.print("Array: [");
 
