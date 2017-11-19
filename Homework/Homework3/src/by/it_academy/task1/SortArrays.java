@@ -21,7 +21,7 @@ public class SortArrays {
             array[i] = scanner.nextInt();
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
     }
 
@@ -39,7 +39,7 @@ public class SortArrays {
             array[i] = scanner.nextInt();
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
             for (int i = 0; i < array.length; i++) {
                 int min = array[i];
@@ -59,7 +59,7 @@ public class SortArrays {
             }
             m();
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
         }
 
@@ -77,7 +77,7 @@ public class SortArrays {
             array[i] = scanner.nextInt();
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
             for (int i = array.length - 1; i > 0; i--) {
                 for (int j = 0; j < i; j++) {
@@ -90,7 +90,7 @@ public class SortArrays {
             }
             m();
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
         }
 
@@ -108,12 +108,12 @@ public class SortArrays {
             array[i] = scanner.nextInt();
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
             Arrays.sort(array);
         m();
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
         }
 
@@ -129,12 +129,12 @@ public class SortArrays {
             array[i] = scanner.nextInt();
         }
         for (int i = 0; i < array.length; i++) {
-            System.out.print("'value' " + array[i] + " | ");
+            System.out.print("\"value\" " + array[i] + " | ");
         }
         m();
             for (int i = 0; i < array.length; i++) {
                 if (array[i] % 2 == 0) {
-                    System.out.print("'value' " + array[i] + " | ");
+                    System.out.print("\"value\" " + array[i] + " | ");
                 }
             }
         }
