@@ -1,6 +1,7 @@
 package by.it_academy.taskHospital;
 
-public class Patients {
+public class Patients { //- extends наследование
+
 
     public enum gender_identity {
         Мужской, Женский
@@ -60,9 +61,7 @@ public class Patients {
         return childrenDepartment;
     }
 
-    public void setUp_to_12(boolean up_to_12) {
-        this.childrenDepartment = up_to_12;
-    }
+
 
     public String getFull_Name() {
         return full_Name;

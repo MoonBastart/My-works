@@ -3,7 +3,7 @@ package by.it_academy.taskHospital;
 import java.util.Scanner;
 
 public class Search {
-    public static void main(String[] arg) {
+      public static void main(String[] arg) {
 
         Patients[] patientsArray = new Patients[10];
 
@@ -29,71 +29,64 @@ public class Search {
         patientsArray [8] = patient_9;
         patientsArray [9] = patient_10;
 
-        for (Patients patients: patientsArray) {
-            printPatients(patients);
-        }
 
-        for (Patients patients: patientsArray) {
-            enter(patients);
-            break;
-        }
-    }
+        /* - полимарфизм
+        People people = new Patients();
+        Patients patients = new People(); //- нельзя т.к. patients более специализированный как
+        */
+
+
+          for (Patients patients : patientsArray) {
+              printPatients(patients);
+          }
+
+          System.out.println("\n\nВведите \"1\" для поиска по имени или фамилии\n" +
+                  "Введите \"2\" для поиска по возрасту\n" +
+                  "Введите \"любую другую цифру\" для выхода из поиска\n" +
+                  "Итак, ваш выбор:");
+          Scanner scanner = new Scanner(System.in);
+          int choise = scanner.nextInt();
+          if (choise == 1) {
+              System.out.println("Введите, пожалуйста, имя или фамилию пациента:");
+              String name1 = scanner.next();
+              for (Patients patients : patientsArray) {
+                  if (patients.getFull_Name().contains(name1)) {
+                      System.out.println("Пациент " + patients.getFull_Name() + " - пол: " + patients.getType() + ", Возраст: " + patients.getAge() +
+                              ", Детское отделение: " + patients.isChildrenDepartment() + ", Диагноз: " + "\"" + patients.getDiagnosis() + "\"");
+                  }
+
+              }
+          }
+          if (choise == 2) {
+              System.out.println("Введите, пожалуйста, возраст:");
+              int number = scanner.nextInt();
+              for (Patients patients : patientsArray) {
+                  if (number == patients.getAge()) {
+                      System.out.println("Пациент " + patients.getFull_Name() + " - пол: " + patients.getType() + ", Возраст: " + patients.getAge() +
+                              ", Детское отделение: " + patients.isChildrenDepartment() + ", Диагноз: " + "\"" + patients.getDiagnosis() + "\"");
+                  }
+
+
+
+
+
+              }
+
+          }
+          if (choise !=1 && choise != 2) {
+              System.out.println("Программа закрывается");
+          }
+
+
+
+      }
+
 
 
 
     public static void printPatients (Patients patients) {
         System.out.println("Пациент " + patients.getFull_Name() + " - Возраст = " + "\"" + patients.getAge() + "\"");
     }
-
-    public static void consoleAge (Patients patients) {
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        //for (Patients patients: patientsArray) {
-            if (number == patients.getAge()) {
-                System.out.println("Пациент " + patients.getFull_Name() + " - пол: " + patients.getType() + ", Возраст: " + patients.getAge() +
-                        ", Детское отделение: " + patients.isChildrenDepartment() + ", Диагноз: " + "\"" + patients.getDiagnosis() + "\"");
-            } else {
-                    System.out.println("Совпадений не найдено");
-                }
-
-        //}
-    }
-
-    public static void consoleName (Patients patients) {
-        Scanner scanner = new Scanner(System.in);
-        String name1 = scanner.next();
-        //for (Patients patients: patientsArray) {
-        if (name1.equals(patients.getName()) == true) {
-            System.out.println("Пациент " + patients.getFull_Name() + " - пол: " + patients.getType() + ", Возраст: " + patients.getAge() +
-                    ", Детское отделение: " + patients.isChildrenDepartment() + ", Диагноз: " + "\"" + patients.getDiagnosis() + "\"");
-        } else {
-            System.out.println("Совпадений не найдено");
-        }
-    //}
-    }
-
-    public static void enter (Patients patients) {
-
-        System.out.println("\n\nВведите \"1\" для поиска по имени\n" +
-                "Введите \"2\" для поиска по возрасту\n" +
-                "Введите \"3\" для выхода из поиска\n" +
-                "Итак, ваш выбор:");
-        Scanner scanner = new Scanner(System.in);
-        int choise = scanner.nextInt();
-        if (choise == 1) {
-            System.out.println("Введите, пожалуйста, имя:");
-            consoleName(patients);
-        }
-        if (choise == 2) {
-            System.out.println("Введите, пожалуйста, возраст:");
-            consoleAge(patients);
-        }
-        if (choise == 3) {
-            System.out.println("Программа закрывается");
-        }
-
-    }
-
 
 }
 
