@@ -1,11 +1,11 @@
-package by.it_academy.task1.for_kitchen.kitchen;
+package by.it_academy.task1.forKitchen.kitchen;
 
-import by.it_academy.task1.for_kitchen.For_Kitchen;
+import by.it_academy.task1.forKitchen.ForKitchen;
 
-public class For_Storage extends For_Kitchen {
+public class ForStorage extends ForKitchen {
     private double minTemperature;
 
-    public For_Storage(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, boolean more20kg, double minTemperature) {
+    public ForStorage(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, boolean more20kg, double minTemperature) {
         super(powerConsumption, frequencyOfUse, a, b, c, more20kg);
         this.minTemperature = minTemperature;
     }

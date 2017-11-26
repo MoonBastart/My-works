@@ -1,11 +1,11 @@
-package by.it_academy.task1.audio.memory_Audio;
+package by.it_academy.task1.audio.memoryAudio;
 
-public class For_Portable extends Memory {
+public class ForPortable extends Memory {
     private double itself; //встроенная память
     private double flash; //флэшка
     private double operational; //оперативная память
 
-    public For_Portable(double itself, double flash, double operational) {
+    public ForPortable(double itself, double flash, double operational) {
         this.itself = itself;
         this.flash = flash;
         this.operational = operational;

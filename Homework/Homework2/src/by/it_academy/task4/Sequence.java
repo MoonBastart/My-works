@@ -4,15 +4,20 @@ public class Sequence {
     public static void main (String[] arg) {
 
 
-        int k = 1234;
-        if(k / 1000 + 1 == (k / 100) % 10 &&
-                (k / 100) % 10 + 1 == (k / 10) % 100 % 10 &&
-                (k / 10) % 100 % 10 + 1 == k % 1000 % 100 % 10) {
+        Integer number = 123456789;
+        String newNumber = number.toString();
+        char [] finalNumber = newNumber.toCharArray();
+        boolean found = false;
+        for (int i = 0; i < finalNumber.length - 1; i++) {
+                if (finalNumber[i] + 1 != finalNumber[i + 1]) {
+                    found = true;
+                    System.out.println("No, these numbers do not form an increasing sequence");
+                    break;
+                }
+            }
+        if (found != true) {
             System.out.println("Yes, these numbers form an increasing sequence");
-        } else {
-            System.out.println("No, these numbers do not form an increasing sequence");
         }
-
 
     }
 }

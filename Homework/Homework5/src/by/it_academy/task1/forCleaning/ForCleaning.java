@@ -1,11 +1,11 @@
-package by.it_academy.task1.for_cleaning;
+package by.it_academy.task1.forCleaning;
 
 import by.it_academy.task1.Appliances;
 
-public class For_Cleaning extends Appliances {
+public class ForCleaning extends Appliances {
     private double noseLevel;
 
-    public For_Cleaning(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, double noseLevel) {
+    public ForCleaning(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, double noseLevel) {
         super(powerConsumption, frequencyOfUse, a, b, c);
         this.noseLevel = noseLevel;
     }

@@ -1,11 +1,11 @@
-package by.it_academy.task1.for_kitchen;
+package by.it_academy.task1.forKitchen;
 
 import by.it_academy.task1.Appliances;
 
-public class For_Kitchen extends Appliances {
+public class ForKitchen extends Appliances {
     private boolean more20kg;
 
-    public For_Kitchen(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, boolean more20kg) {
+    public ForKitchen(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, boolean more20kg) {
         super(powerConsumption, frequencyOfUse, a, b, c);
         this.more20kg = more20kg;
     }

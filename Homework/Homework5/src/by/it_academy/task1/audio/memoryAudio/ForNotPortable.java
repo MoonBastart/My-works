@@ -1,9 +1,9 @@
-package by.it_academy.task1.audio.memory_Audio;
+package by.it_academy.task1.audio.memoryAudio;
 
-public class For_Not_Portable extends Memory {
+public class ForNotPortable extends Memory {
     private double itself; //встроенная память
 
-    public For_Not_Portable(double itself) {
+    public ForNotPortable(double itself) {
         this.itself = itself;
     }
 

@@ -1,8 +1,8 @@
-package by.it_academy.task1.for_cleaning.washer_and_vacuum;
+package by.it_academy.task1.forCleaning.washerAndVacuum;
 
-import by.it_academy.task1.for_cleaning.For_Cleaning;
+import by.it_academy.task1.forCleaning.ForCleaning;
 
-public class Washer extends For_Cleaning {
+public class Washer extends ForCleaning {
     private double turnovers;
 
     public Washer(double powerConsumption, boolean frequencyOfUse, double a, double b, double c, double noseLevel, double turnovers) {
