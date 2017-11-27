@@ -1,6 +1,6 @@
 package by.it_academy.taskHospital;
 
-public class Patients { //- extends наследование
+public class Patients {
 
 
     public enum gender_identity {
