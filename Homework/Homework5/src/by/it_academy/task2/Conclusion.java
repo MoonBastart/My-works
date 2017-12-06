@@ -6,8 +6,9 @@ public class Conclusion {
 
     public static void main(String[] arg) {
 
-        ATL put = new ATL(5, 2, 8);
-        ATL takeOff = new ATL(12, 4, 5);
+        ATL put = new ATL(5, 2, 8); //изначальное кол-во купюр соответ. номинала лежащих в ATL (если ложить)
+        ATL takeOff = new ATL(12, 4, 5); ///изначальное кол-во купюр соответ. номинала лежащих в ATL (для снятия)
+        //можно использовать только один и менять исходные данные
 
         System.out.println("Enter:" +
                 "\n     number \"1\" to add money" +
