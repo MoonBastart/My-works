@@ -69,7 +69,7 @@ public class Main {
 
         try {
             date3 = pattern.parse(birthD3);
-            student1.setBirth(date3);
+            student3.setBirth(date3);
         } catch (Exception e) {
             error();
         }
@@ -102,9 +102,19 @@ public class Main {
                 }
             }
         }
-        System.out.println(year[0] + " " + year[1] + " " + year[2]);
 
+        int mediumYear = 0;
+        int mediumMonth = 0;
+        for (int i = 0; i < year.length; i++) {
+            mediumYear = mediumYear + year[i];
+            mediumMonth = mediumMonth + month[i];
+        }
 
+        int mediumM = (int)Math.floor((mediumYear/year.length) * 12 + (mediumMonth/month.length));
+        int yearNew = (int)Math.floor(mediumM / 12);
+        int monthNew = mediumM - yearNew * 12;
+
+        System.out.println("The medium age of students is: " + yearNew + " year and " + monthNew + " months");
 
         }
 
