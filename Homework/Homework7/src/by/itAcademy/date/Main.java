@@ -12,15 +12,32 @@ public class Main {
     public static void main(String[] arg) {
 
         Student[] studentArray = new Student[3];
+//        String[] birth = new String[studentArray.length];
+//        Date[] date = new Date[studentArray.length];
 
         Scanner scanner = new Scanner(System.in);
 
+        GregorianCalendar calendar = new GregorianCalendar();
         SimpleDateFormat pattern = new SimpleDateFormat("dd.MM.yyyy");
 
+//        for (int i = 0; i < studentArray.length; i++) {
+//            System.out.println("Enter information of student " + (i + 1));
+//            surname();
+//            studentArray[i].setSurname(scanner.next());
+//            name();
+//            studentArray[i].setName(scanner.next());
+//            birth();
+//            birth[i] = scanner.next();
+//            try {
+//                date[i] = pattern.parse(birth[i]);
+//                studentArray[i].setBirth(date[i]);
+//            } catch (Exception e) {
+//                error();
+//            }
+//        }
+
         Student student1 = new Student();
-
         System.out.println("Enter information of student 1");
-
         surname();
         student1.setSurname(scanner.next());
         name();
@@ -36,10 +53,9 @@ public class Main {
             error();
         }
 
+
         Student student2 = new Student();
-
         System.out.println("\nEnter information of student 2");
-
         surname();
         student2.setSurname(scanner.next());
         name();
@@ -56,9 +72,7 @@ public class Main {
         }
 
         Student student3 = new Student();
-
         System.out.println("\nEnter information of student 3");
-
         surname();
         student3.setSurname(scanner.next());
         name();
@@ -77,8 +91,6 @@ public class Main {
         studentArray[0] = student1;
         studentArray[1] = student2;
         studentArray[2] = student3;
-
-        GregorianCalendar calendar = new GregorianCalendar();
 
         int[] month = new int[studentArray.length];
         int[] year = new int[studentArray.length];
@@ -114,7 +126,7 @@ public class Main {
         int yearNew = (int)Math.floor(mediumM / 12);
         int monthNew = mediumM - yearNew * 12;
 
-        System.out.println("The medium age of students is: " + yearNew + " year and " + monthNew + " months");
+        System.out.println("The medium age of students is: " + yearNew + " years and " + monthNew + " months");
 
         }
 
