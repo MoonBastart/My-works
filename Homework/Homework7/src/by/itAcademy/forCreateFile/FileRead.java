@@ -4,7 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileRead {
-    public static void main(String[] arg) {
+    public static void main (String[] args) {
         try(FileReader reader = new FileReader("C:\\Users\\Bastart\\Desktop\\Private project\\My-works\\Homework\\Homework7\\ForData.txt") {
             int c;
             while((c = reader.read()) != -1) {

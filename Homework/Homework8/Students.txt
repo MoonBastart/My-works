@@ -1,0 +1,14 @@
+List of students:
+
+Student 1
+name of student is He
+age of student is 12
+___________
+Student 2
+name of student is She
+age of student is 2
+___________
+Student 3
+name of student is It
+age of student is 26
+___________
